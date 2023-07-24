@@ -24,6 +24,14 @@ nav {
     color: #00b39b
   }
 
+  .divvv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    width: 100vw;
+  }
+
   .horizontal-list {
     list-style: none;
     padding: 0;
@@ -41,15 +49,18 @@ nav {
 
 
 .navbar-container{
+  width: 60vw;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  
+  display: flex;
+  justify-content: space-between;
     
-    width: 60vw;
-    margin-left: 20vw;
-    margin-right: 20vw;
-    
+    background-color:white;
     display: flex;
     justify-content: space-between;
-    position: fixed;
-    background-color: #fff;
+    position: sticky;
+    
 }
 minilogo{
     display: flex;
@@ -113,8 +124,6 @@ minilogo{
     
     background-color: #00ccb1;
     border-radius: 15px; 
-    margin-right: 1000px;
-    margin-left: 100px ;
     width: 300px; 
     height: 345px;
     l
@@ -158,8 +167,6 @@ minilogo{
   
   background-color: #3d83df;
   border-radius: 15px; 
-  margin-right: 1000px;
-  margin-left: 100px ;
   width: 300px; 
   height: 345px;
   l
@@ -201,11 +208,8 @@ color: #fff;
 
   display: flex;
   flex-direction: column;
-  
   background-color: #1b2734;
   border-radius: 15px; 
-  margin-right: 1000px;
-  margin-left: 100px ;
   width: 300px; 
   height: 345px;
   l
@@ -281,6 +285,7 @@ color: #fff;
   margin-right: 1000px;
   margin-top: 60px;
   font-family: "roboto";
+  width: 600px;
 }
 
 .theworld2{
@@ -290,6 +295,7 @@ color: #fff;
   color: #747474;
   margin-right: 1000px;
   margin-bottom: 70px;
+  width: 500px;
 
 }
 
@@ -324,7 +330,7 @@ color: #fff;
 
 }
 
-.doctors{
+.doc{
   margin-top: 30px;
 
 }
@@ -344,7 +350,7 @@ color: #fff;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    background-color: white;
     text-align: center;
     width: 220px;
     border-radius: 2px;
@@ -418,10 +424,11 @@ color: #fff;
 
 .smalldiv{
 
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-content: stretch;
+  display: grid;
+  grid-template-columns: 320px 280px;
+  grid-template-rows: 320px 320px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 
@@ -429,7 +436,11 @@ color: #fff;
 
   display: flex;
   flex-direction: column;
-  background-color:#d0faf4;
+  background-color: #d0faf4;
+  width: 65vw;
+  
+  
+  
 
 }
 
@@ -437,8 +448,9 @@ color: #fff;
 .DIV{
 
   display: flex;
-  flex-direction: column;
-  background-color:#d0faf4;
+  flex-direction: row;
+  background-color: #d0faf4;
+  width: 1500px;
 }
 
 h3{
@@ -470,7 +482,7 @@ h1{
     letter-spacing: -0.3px;
     text-align: center;
 }
-bouttonblue {
+.bouttonblue {
   margin-left: 120px;
   background-color: #3d83df;
   color: #fff;
@@ -486,7 +498,37 @@ bouttonblue {
   letter-spacing: 0.04em;
   font-size: 12px;
   width: 150px;
-    height: 50px;
+  height: 50px;
+  margin-left: 550px;
+
 }
+
+.ismbled{
+
+  font-size: 1.125em;
+  font-weight: 400;
+  line-height: 1.6666666667;
+  padding: 1.1111111111em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.bolden{
+
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.03);
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 311px;
+  z-index: 2;
+  position: relative;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid grid-template-rows: 300px 300px 300px;
+  gap: 50px;
+  color: #747474;
+  padding: 10px;
+}
+
+
 }
 
